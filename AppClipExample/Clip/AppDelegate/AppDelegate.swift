@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AppClip
+//  Clip
 //
-//  Created by inchan on 2022/04/04.
+//  Created by kangc on 2022/04/05.
 //
 
 import UIKit

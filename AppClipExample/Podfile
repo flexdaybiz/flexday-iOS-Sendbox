@@ -6,12 +6,12 @@ def common_pods
 end
 
 
-target 'AppClip' do
+target 'Clip' do
   common_pods
 
 end
 
-target 'AppClipExample' do
+target 'App' do
   common_pods
 
 end
