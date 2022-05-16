@@ -1,0 +1,44 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '14.0'
+
+def ui_pods
+  pod 'SDWebImage'
+  pod 'Toast-Swift'
+end
+
+def extensions_pods
+  pod 'SwifterSwift'
+end
+
+def rx_pods
+  pod 'RxSwift', '~> 5.0'
+  pod 'RxCocoa', '~> 5.0'
+  pod 'NSObject+Rx'
+end
+
+def networking_pods
+  pod 'Alamofire', '~> 4.0'
+  pod 'RxAlamofire'
+end
+
+def common_pods
+    use_frameworks!
+    ui_pods
+    extensions_pods
+    rx_pods
+    networking_pods
+end
+
+
+target 'Store' do
+  common_pods
+end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+    end
+  end
+end

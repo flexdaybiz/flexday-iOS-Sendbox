@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B59-fR-7Bf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="QCs-9l-JLD">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B59-fR-7Bf" customClass="MainTabBarController" customModule="Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dhT-oQ-Hl1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="S3H-i5-gz3" kind="relationship" relationship="viewControllers" id="Vjj-uB-MNa"/>
+                        <segue destination="JhF-G1-Hhm" kind="relationship" relationship="viewControllers" id="tsm-cD-3v9"/>
+                        <segue destination="m8F-Lt-hJ5" kind="relationship" relationship="viewControllers" id="6nl-Ja-m3T"/>
+                        <segue destination="CUW-Uq-8lb" kind="relationship" relationship="viewControllers" id="iaP-Gg-gn1"/>
+                        <segue destination="BXm-dO-EGV" kind="relationship" relationship="viewControllers" id="gnV-SN-xc8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRZ-6j-dg0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3788" y="528"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="AGM-WG-k3d">
+            <objects>
+                <navigationController id="S3H-i5-gz3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Store" id="6CO-Vd-x5b"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IOE-67-ctV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jxW-m9-dYv" kind="relationship" relationship="rootViewController" id="3Xg-3P-u2X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfC-MS-CYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2300" y="528"/>
+        </scene>
+        <!--스토어-->
+        <scene sceneID="Kzw-Oo-QiI">
+            <objects>
+                <viewController id="jxW-m9-dYv" customClass="FDStoreVIewController" customModule="Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JZt-Vy-Rfo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dEz-qY-bmq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="스토어" id="49v-QO-84a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBS-05-YAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="528"/>
+        </scene>
+        <!--Staff-->
+        <scene sceneID="LWo-7w-aLd">
+            <objects>
+                <navigationController id="JhF-G1-Hhm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Staff" id="n4n-vV-v0x"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LB5-1c-YtY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qoF-Rq-vPb" kind="relationship" relationship="rootViewController" id="euv-SA-ZN2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNT-H9-1W8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2300" y="1248"/>
+        </scene>
+        <!--직원-->
+        <scene sceneID="dyM-Bv-6EN">
+            <objects>
+                <viewController id="qoF-Rq-vPb" customClass="FDStaffVIewController" customModule="Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cF9-Ok-UNk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aSA-PX-lsd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="직원" id="BNx-3R-Bis"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcC-8m-36c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="1248"/>
+        </scene>
+        <!--Payment-->
+        <scene sceneID="6L0-M8-8L8">
+            <objects>
+                <navigationController id="m8F-Lt-hJ5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Payment" id="hhr-Hu-TgU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="52h-vl-g5b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="F3H-xJ-6ku" kind="relationship" relationship="rootViewController" id="kaA-9Y-kFn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zf-hZ-0uO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2300" y="2007"/>
+        </scene>
+        <!--결제-->
+        <scene sceneID="037-rg-QMb">
+            <objects>
+                <viewController id="F3H-xJ-6ku" customClass="FDPaymentVIewController" customModule="Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4k-of-wyn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="u06-ef-tWW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="결제" id="mMt-Mg-kTT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSz-Ya-9H2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="2007"/>
+        </scene>
+        <!--Apply-->
+        <scene sceneID="Pfy-0O-KeC">
+            <objects>
+                <navigationController id="CUW-Uq-8lb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Apply" id="k3X-51-3Gh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ea8-uO-Dvh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JwI-Il-m9I" kind="relationship" relationship="rootViewController" id="Icv-Ff-gFp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6l-Qb-cKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2300" y="2750"/>
+        </scene>
+        <!--신청-->
+        <scene sceneID="vGj-Gv-C8p">
+            <objects>
+                <viewController id="JwI-Il-m9I" customClass="FDApplyVIewController" customModule="Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrH-T8-nyB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="To0-Po-pRZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="신청" id="dbo-Kw-leR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Dx-21-a4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="2750"/>
+        </scene>
+        <!--Calculate-->
+        <scene sceneID="S2Z-Hl-Uuv">
+            <objects>
+                <navigationController id="BXm-dO-EGV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calculate" id="mwB-ac-ipG"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dzh-hO-EvG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NKU-zS-1bo" kind="relationship" relationship="rootViewController" id="2o4-Q8-7Bs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tc4-ws-HY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2300" y="3469"/>
+        </scene>
+        <!--정산-->
+        <scene sceneID="ad2-wq-nfA">
+            <objects>
+                <viewController id="NKU-zS-1bo" customClass="FDCalculateVIewController" customModule="Store" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R4k-uF-viD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oFO-dq-bQJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="정산" id="Wlx-by-ebM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mv3-wF-h8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384" y="3469"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
