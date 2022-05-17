@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '14.0'
+
+def common_pods
+    use_frameworks!
+end
+
+
+target 'Clip' do
+  common_pods
+
+end
+
+target 'App' do
+  common_pods
+
+end

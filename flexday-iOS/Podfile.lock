@@ -54,7 +54,7 @@ DEPENDENCIES:
   - Toast-Swift
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - "NSObject+Rx"
     - RxAlamofire
@@ -76,6 +76,6 @@ SPEC CHECKSUMS:
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: e3754d6ac6750184671a148a3594bfeb40cc42df
+PODFILE CHECKSUM: 74066853cf3bee638857d5aa1d43fe809280c966
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.8.4
