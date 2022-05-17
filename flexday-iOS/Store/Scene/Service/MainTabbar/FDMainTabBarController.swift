@@ -11,9 +11,9 @@ import UIKit
 var kTabBarHeight: CGFloat = 80// Input the height we want to set for Tabbar here
 typealias KPTabActionHandler = ( _ selectedTag: Int) -> Void
 
-class MainTabBarController: UITabBarController, FDViewControllerProtocol {
+class FDMainTabBarController: UITabBarController, FDViewControllerProtocol {
     
-    open var tabBarView: MainTabbarView? = nil
+    open var tabBarView: FDMainTabbarView? = nil
     
     open var isTabBarHidden = false {
         didSet{
@@ -46,7 +46,7 @@ class MainTabBarController: UITabBarController, FDViewControllerProtocol {
     open func displayCustomTabBar() {
         
         if self.tabBarView == nil {
-            self.tabBarView = MainTabbarView.loadFromNib()
+            self.tabBarView = FDMainTabbarView.loadFromNib()
             self.view.addSubview(self.tabBarView!)
             self.tabBarView?.translatesAutoresizingMaskIntoConstraints = false;
             self.tabBarView?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true

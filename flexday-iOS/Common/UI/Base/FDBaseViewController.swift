@@ -19,8 +19,18 @@ class FDBaseViewController: UIViewController, FDViewControllerProtocol {
         deallocateStamp()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         firstLuanched = false;
+    }
+    
+    // MARK: - setup
+    
+    func setupNavigationBar() {
+        self.navigationController?.navigationBar.tintColor = UIColor.red
     }
 }

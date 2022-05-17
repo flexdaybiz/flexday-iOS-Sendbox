@@ -12,7 +12,7 @@ enum TabbarItemTag: Int {
     case store, staff, payment, apply, calculate
 }
 
-class MainTabbarView: FDBaseView {
+class FDMainTabbarView: FDBaseView {
     
     @IBOutlet var stackView: UIStackView?
     @IBOutlet var controls: [UIControl]?

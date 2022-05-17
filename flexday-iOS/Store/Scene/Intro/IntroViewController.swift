@@ -42,14 +42,14 @@ class IntroViewController: FDBaseViewController {
     }
     
     func enterAccountSetupViewController() {
-        if let mainViewController = MainTabBarController.loadFromStoryboard() {
+        if let mainViewController = FDMainTabBarController.loadFromStoryboard() {
             let navigationController = UINavigationController(rootViewController: mainViewController)
             view.window?.rootViewController = navigationController
         }
     }
     
     func enterMainViewController() {
-        if let mainViewController = MainTabBarController.loadFromStoryboard() {
+        if let mainViewController = FDMainTabBarController.loadFromStoryboard() {
             let navigationController = UINavigationController(rootViewController: mainViewController)
             navigationController.isNavigationBarHidden = true
             view.window?.rootViewController = navigationController
